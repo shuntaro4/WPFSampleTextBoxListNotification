@@ -7,7 +7,26 @@
     Width="525"
     Height="350"
     prism:ViewModelLocator.AutoWireViewModel="True">
-    <Grid>
-        <ContentControl prism:RegionManager.RegionName="ContentRegion" />
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Button
+            Grid.Row="0"
+            Margin="5"
+            Padding="5"
+            Content="素のWPF" />
+        <Button
+            Grid.Row="1"
+            Margin="5"
+            Padding="5"
+            Content="Prism" />
+        <Button
+            Grid.Row="2"
+            Margin="5"
+            Padding="5"
+            Content="Prism + ReactiveProperty" />
     </Grid>
 </Window>
