@@ -1,7 +1,6 @@
-﻿using WPFSampleTextBoxListNotification.Views;
-using Prism.Ioc;
-using Prism.Modularity;
+﻿using Prism.Ioc;
 using System.Windows;
+using WPFSampleTextBoxListNotification.Views;
 
 namespace WPFSampleTextBoxListNotification
 {
