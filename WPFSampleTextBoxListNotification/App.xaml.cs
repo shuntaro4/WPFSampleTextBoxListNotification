@@ -4,9 +4,6 @@ using WPFSampleTextBoxListNotification.Views;
 
 namespace WPFSampleTextBoxListNotification
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App
     {
         protected override Window CreateShell()
