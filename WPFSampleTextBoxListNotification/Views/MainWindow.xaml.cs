@@ -14,5 +14,11 @@ namespace WPFSampleTextBoxListNotification.Views
             var window = new NormalWindow();
             window.Show();
         }
+
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+            var window = new PrismWIndow();
+            window.Show();
+        }
     }
 }

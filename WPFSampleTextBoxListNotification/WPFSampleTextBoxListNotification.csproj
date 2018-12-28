@@ -58,8 +58,12 @@
     </ApplicationDefinition>
     <Compile Include="Models\Number.cs" />
     <Compile Include="ViewModels\NormalWindowViewModel.cs" />
+    <Compile Include="ViewModels\PrismWIndowViewModel.cs" />
     <Compile Include="Views\NormalWindow.xaml.cs">
       <DependentUpon>NormalWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PrismWIndow.xaml.cs">
+      <DependentUpon>PrismWIndow.xaml</DependentUpon>
     </Compile>
     <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -75,6 +79,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\NormalWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PrismWIndow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

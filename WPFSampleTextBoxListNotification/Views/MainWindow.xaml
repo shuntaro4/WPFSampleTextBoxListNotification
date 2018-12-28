@@ -23,6 +23,7 @@
             Grid.Row="1"
             Margin="5"
             Padding="5"
+            Click="Button_Click2"
             Content="Prism" />
         <Button
             Grid.Row="2"
