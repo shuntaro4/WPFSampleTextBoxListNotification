@@ -34,7 +34,6 @@ namespace WPFSampleTextBoxListNotification.ViewModels
             }
         }
 
-        public int _total;
         public int Total
         {
             get => Numbers.Sum(x => x.Amount);
