@@ -17,8 +17,8 @@ namespace WPFSampleTextBoxListNotification.ViewModels
             }
         }
 
-        public ObservableCollection<Number> _numbers;
-        public ObservableCollection<Number> Numbers
+        public ObservableCollection<NumberPrism> _numbers;
+        public ObservableCollection<NumberPrism> Numbers
         {
             get => _numbers;
             set
@@ -34,11 +34,11 @@ namespace WPFSampleTextBoxListNotification.ViewModels
 
         public PrismWIndowViewModel()
         {
-            var list = new ObservableCollection<Number>()
+            var list = new ObservableCollection<NumberPrism>()
             {
-                new Number(100, () => RaisePropertyChanged(nameof(Total))),
-                new Number(200, () => RaisePropertyChanged(nameof(Total))),
-                new Number(300, () => RaisePropertyChanged(nameof(Total))),
+                new NumberPrism(100, () => RaisePropertyChanged(nameof(Total))),
+                new NumberPrism(200, () => RaisePropertyChanged(nameof(Total))),
+                new NumberPrism(300, () => RaisePropertyChanged(nameof(Total))),
             };
 
             Numbers = list;

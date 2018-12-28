@@ -57,6 +57,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\Number.cs" />
+    <Compile Include="Models\NumberPrism.cs" />
     <Compile Include="ViewModels\NormalWindowViewModel.cs" />
     <Compile Include="ViewModels\PrismWIndowViewModel.cs" />
     <Compile Include="Views\NormalWindow.xaml.cs">
