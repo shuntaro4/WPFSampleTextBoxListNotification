@@ -58,13 +58,18 @@
     </ApplicationDefinition>
     <Compile Include="Models\Number.cs" />
     <Compile Include="Models\NumberPrism.cs" />
+    <Compile Include="Models\NumberReactiveProperty.cs" />
     <Compile Include="ViewModels\NormalWindowViewModel.cs" />
     <Compile Include="ViewModels\PrismWIndowViewModel.cs" />
+    <Compile Include="ViewModels\ReactivePropertyWindowViewModel.cs" />
     <Compile Include="Views\NormalWindow.xaml.cs">
       <DependentUpon>NormalWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\PrismWIndow.xaml.cs">
       <DependentUpon>PrismWIndow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReactivePropertyWindow.xaml.cs">
+      <DependentUpon>ReactivePropertyWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -84,6 +89,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\PrismWIndow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReactivePropertyWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

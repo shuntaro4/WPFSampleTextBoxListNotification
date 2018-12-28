@@ -29,6 +29,7 @@
             Grid.Row="2"
             Margin="5"
             Padding="5"
+            Click="Button_Click3"
             Content="Prism + ReactiveProperty" />
     </Grid>
 </Window>

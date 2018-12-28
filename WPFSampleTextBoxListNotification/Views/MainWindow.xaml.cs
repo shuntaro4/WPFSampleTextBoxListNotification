@@ -20,5 +20,11 @@ namespace WPFSampleTextBoxListNotification.Views
             var window = new PrismWIndow();
             window.Show();
         }
+
+        private void Button_Click3(object sender, RoutedEventArgs e)
+        {
+            var window = new ReactivePropertyWindow();
+            window.Show();
+        }
     }
 }
