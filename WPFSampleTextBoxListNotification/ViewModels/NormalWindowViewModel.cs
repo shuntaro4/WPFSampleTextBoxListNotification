@@ -1,5 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
+using WPFSampleTextBoxListNotification.Models;
 
 namespace WPFSampleTextBoxListNotification.ViewModels
 {
@@ -21,8 +23,8 @@ namespace WPFSampleTextBoxListNotification.ViewModels
             }
         }
 
-        public ObservableCollection<int> _numbers;
-        public ObservableCollection<int> Numbers
+        public ObservableCollection<Number> _numbers;
+        public ObservableCollection<Number> Numbers
         {
             get => _numbers;
             set
@@ -35,17 +37,19 @@ namespace WPFSampleTextBoxListNotification.ViewModels
         public int _total;
         public int Total
         {
-            get => _total;
-            set
-            {
-                _total = value;
-                OnPropertyChanged(nameof(Total));
-            }
+            get => Numbers.Sum(x => x.Amount);
         }
 
         public NormalWindowViewModel()
         {
+            var list = new ObservableCollection<Number>()
+            {
+                new Number(100, () => OnPropertyChanged(nameof(Total))),
+                new Number(200, () => OnPropertyChanged(nameof(Total))),
+                new Number(300, () => OnPropertyChanged(nameof(Total))),
+            };
 
+            Numbers = list;
         }
     }
 }

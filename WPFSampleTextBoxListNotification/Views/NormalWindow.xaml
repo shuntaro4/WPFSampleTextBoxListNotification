@@ -3,7 +3,6 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:local="clr-namespace:WPFSampleTextBoxListNotification.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="NormalWindow"
     Width="300"
@@ -21,14 +20,15 @@
         <ItemsControl
             Grid.Row="1"
             Margin="5"
-            Padding="5">
+            Padding="5"
+            ItemsSource="{Binding Numbers}">
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
                     <TextBox
                         Margin="5"
                         Padding="5"
                         HorizontalContentAlignment="Right"
-                        Text="" />
+                        Text="{Binding Amount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
@@ -37,6 +37,6 @@
             Margin="5"
             Padding="5"
             HorizontalAlignment="Right"
-            Text="合計表示" />
+            Text="{Binding Total, Mode=OneWay}" />
     </Grid>
 </Window>
